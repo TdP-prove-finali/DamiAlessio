@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="800.0" maxWidth="1000.0" minHeight="800.0" minWidth="1000.0" prefHeight="800.0" prefWidth="1000.0" fx:controller="main.FXMLController" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="25.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="generateVoronoi" layoutX="357.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleGenerateVoronoi" text="Generate Voronoi" />
+            <Button fx:id="generatePerlin" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleGeneratePerlin" text="Generate Perlin" />
+            <Button fx:id="interpolate" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleInterpolate" text="Interpolate" />
+            <Button fx:id="saveImages" mnemonicParsing="false" onAction="#handleSaveImages" text="Save images" />
+            <Button fx:id="reset" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleReset" prefHeight="25.0" prefWidth="53.0" text="Reset" />
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <ImageView fx:id="imageView" fitHeight="775.0" fitWidth="750.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+   </center>
+   <left>
+      <VBox maxWidth="250.0" minWidth="250.0" prefHeight="775.0" prefWidth="250.0">
+         <children>
+            <TextField fx:id="width" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Width" VBox.vgrow="ALWAYS" />
+            <TextField fx:id="height" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Height" VBox.vgrow="ALWAYS" />
+            <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+               <children>
+                  <TextField fx:id="seedsNumber" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Number of seeds" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="populateVoronoi" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="70.0" mnemonicParsing="false" onAction="#handlePopulateVoronoi" text="Populate" />
+               </children>
+            </HBox>
+            <Label layoutX="10.0" layoutY="260.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Random Voronoi with seeds:" />
+            <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+               <children>
+                  <TextField fx:id="databaseNumber" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Number of seeds" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="getDatabase" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleGetDatabase" text="Get" />
+               </children>
+            </HBox>
+            <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+               <children>
+                  <TextField maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="X" fx:id="xCoordinate" />
+                  <TextField fx:id="yCoordinate" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Y" />
+                  <Button fx:id="addSeed" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="50.0" mnemonicParsing="false" onAction="#handleAddSeed" text="Add" />
+               </children>
+            </HBox>
+            <TextField fx:id="amplitude" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Amplitude (default 1.0)" VBox.vgrow="ALWAYS" />
+            <TextField fx:id="frequency" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Frequency (default 10.0)" VBox.vgrow="ALWAYS" />
+            <TextField fx:id="octave" layoutX="10.0" layoutY="110.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Octaves (default 8)" VBox.vgrow="ALWAYS" />
+            <TextField fx:id="persistence" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Persistence (default 0.5)" VBox.vgrow="ALWAYS" />
+            <TextField fx:id="seedsAverage" layoutX="10.0" layoutY="185.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Nodi da pesare (default 5)" VBox.vgrow="ALWAYS" />
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Interpolation Value" VBox.vgrow="ALWAYS" />
+            <Slider fx:id="interpolationValue" blockIncrement="0.1" majorTickUnit="0.1" max="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="0.5" VBox.vgrow="ALWAYS" />
+            <ComboBox fx:id="selectedImage" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Selected Image"  VBox.vgrow="ALWAYS"  />
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

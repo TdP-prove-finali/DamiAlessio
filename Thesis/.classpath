@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/Sdaxddx/Downloads/Thesis/jts-core-1.19.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sdaxddx/Downloads/Thesis/jts-io-common-1.19.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sdaxddx/Downloads/Thesis/jts-core-1.19.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sdaxddx/Downloads/Thesis/jts-io-common-1.19.0-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sdaxddx/Downloads/Thesis/jts-io-common-1.19.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sdaxddx/Downloads/Thesis/jts-core-1.19.0-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sdaxddx/Downloads/Thesis/javafx-sdk-22.0.1/lib/javafx.base.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sdaxddx/Downloads/Thesis/javafx-sdk-22.0.1/lib/javafx.controls.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sdaxddx/Downloads/Thesis/javafx-sdk-22.0.1/lib/javafx.fxml.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sdaxddx/Downloads/Thesis/javafx-sdk-22.0.1/lib/javafx.graphics.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sdaxddx/Downloads/Thesis/javafx-sdk-22.0.1/lib/javafx.media.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sdaxddx/Downloads/Thesis/javafx-sdk-22.0.1/lib/javafx.swing.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sdaxddx/Downloads/Thesis/javafx-sdk-22.0.1/lib/javafx.web.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sdaxddx/Downloads/Thesis/javafx-sdk-22.0.1/lib/javafx-swt.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sdaxddx/Downloads/Thesis/mariadb-java-client-3.4.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
